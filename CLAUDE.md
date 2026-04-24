@@ -16,12 +16,13 @@ AI/ML learning repo following the Apna College Prime Batch course.
 
 ## Project Structure
 ```
-01-Python-Basics/
-02-NumPy/
-03-Pandas/
-04-Visualization/
-05-Math-for-ML/
-06-Supervised-Learning/
-07-Unsupervised-Learning/
-08-Projects/
+01-Python-Fundamentals/
+02-Data/              (NumPy, Pandas, EDA, Visualization, Web Scraping)
+03-Math-for-AI/       (Probability, Linear Algebra, Calculus)
+04-Supervised-ML/
+05-Unsupervised-ML/
+06-Deep-Learning/
+07-Reinforcement-Learning/
+08-Projects/          (CreditWise, SmartCart, Text Summarizer, etc.)
+09-Deployment/        (Flask, OpenAI APIs, Agentic AI)
 ```
