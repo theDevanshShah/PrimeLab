@@ -1,6 +1,6 @@
 # Conditional Statements in Python
 # Execute different code based on conditions
-
+'''
 # --- if statement ---
 age = 20
 if age >= 18:
@@ -48,3 +48,25 @@ elif age >= 21 or income >= 50000:
     print("Partially eligible")
 else:
     print("Not eligible")
+'''
+
+# Dev's Example
+
+# WAP to determine the traffic light colors
+
+color = input("Enter the color name : ")
+
+if color == "red":
+    print("STOP")
+elif color == "yellow":
+    print("LOOK")
+elif color == "green":
+    print("GO")
+else:
+    print("Wrong Name")
+    
+n = int(input("Enter any positive number "))  
+if (n % 2 == 0):
+    print("Even")
+else:
+    print("odd")
