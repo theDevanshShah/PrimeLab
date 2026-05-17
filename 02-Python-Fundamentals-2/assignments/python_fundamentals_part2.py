@@ -87,7 +87,7 @@ else:
 # Q5. Ternary challenge: Take age as input.
 #     In ONE line, print "Can Vote" if age >= 18, else "Cannot Vote".
 
-print("Can Vote" if int(input("Enter age: ")) >= 18 else "Cannot Vote") 
+#print("Can Vote" if int(input("Enter age: ")) >= 18 else "Cannot Vote") 
 
 # ============================================================
 #  SECTION 2: NESTING
@@ -100,21 +100,66 @@ print("Can Vote" if int(input("Enter age: ")) >= 18 else "Cannot Vote")
 #     - If age >= 18 → "Adult"
 #       - If age >= 60 → "Senior Citizen"
 #       - Else → "Working Age"
+'''
+age = int(input("Please enter valid age : "))
 
+if(age < 18):
+    print("Minor")
+    if(age < 5):
+        print("Toddler")
+    else:
+        print("Kid/Teen")
+elif(age >= 18):
+    print("Adult")
+    if(age >= 60):
+        print("Senior Citizen")
+    else:
+        print("Working Age")
+'''
 
 # Q7. Number Analyzer — Take a number as input.
 #     First check: positive, negative, or zero.
 #     If positive → is it even or odd?
 #     If negative → is it even or odd?
 #     If zero → "Zero is neither positive nor negative"
+'''
+number = int(input("Please Enter A Number : "))
 
+if(number < 0):
+    print("It's Negative and ... ")
+    if(number % 2 == 0):
+        print("It's Even")
+    else:
+        print("It's Odd")
+elif(number > 0):
+    print("It's Positive and ...")
+    if(number % 2 == 0):
+        print("It's Even")
+    else:
+        print("It's Odd")
+elif(number == 0):
+    print("Zero is neither positive nor negative")
+else:
+    print("Enter Valid Number")
+'''
 
 # Q8. Login System — Take username and password as input.
 #     - If username is "dev" →
 #       - If password is "python123" → "Login Successful!"
 #       - Else → "Wrong Password!"
 #     - Else → "User Not Found!"
+'''
+userName = input("Please Enter Valid UserName : ")
+password = input("Please Enter Valid Password : ")
 
+if(userName == "dev"):
+    if(password == "python123"):
+        print("Login SuccessFul!")
+    else:
+        print("Wrong Password!")
+else:
+    print("Wrong UserName")
+'''
 
 # Q9. Marks + Attendance — Take marks and attendance (int) as input.
 #     - If attendance >= 75 →
@@ -123,7 +168,20 @@ print("Can Vote" if int(input("Enter age: ")) >= 18 else "Cannot Vote")
 #       - marks < 60 → "Fail"
 #     - If attendance < 75 → "Detained - Low Attendance"
 #       (don't even check marks)
+'''
+marks = int(input("Please Enter Valid Marks : "))
+attendance = int(input("Please Enter Valid Attendance : "))
 
+if(attendance >= 75):
+    if(marks >= 90):
+        print("Grade A")
+    elif(marks >= 60):
+        print("Grade B")
+    else:
+        print("Fail")
+else:
+    print("Detained -> Low Attendance")
+'''
 
 # Q10. Triangle Checker — Take 3 sides (a, b, c) as input.
 #      - First: are all sides positive? If not → "Invalid sides"
@@ -133,8 +191,26 @@ print("Can Vote" if int(input("Enter age: ")) >= 18 else "Cannot Vote")
 #          - Two equal → "Isosceles"
 #          - None equal → "Scalene"
 #        - If no → "Not a triangle"
+'''
+A = int(input("Please Enter Side A : "))
+B = int(input("Please Enter Side B : "))
+C = int(input("Please Enter Side C : "))
 
-
+if(A > 0  and B > 0  and C > 0):
+    if((A + B > C) and (B + C > A) and (A + C > B)):
+        print("IT'S A VALID TRIANGLE")
+        if(A == B == C):
+            print("Equilateral")
+        elif(A == B or A == C or B == C):
+            print("Isosceles")
+        elif(A != B and B != C and C != A):
+            print("Scalene")
+    else:
+        print("Not a triangle")
+else:
+    print("Invalid Sides")
+'''
+  
 # ============================================================
 #  SECTION 3: MATCH-CASE
 # ============================================================
