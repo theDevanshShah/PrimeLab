@@ -237,6 +237,7 @@ match dayNumber:
 #      Take num1, operator (+,-,*,/), and num2 as input.
 #      Match the operator and print the result.
 #      Handle division by zero!
+'''
 num1 = int(input("Please Enter Valid Number 1 : "))
 num2 = int(input("Please Enter Valid Number 2 : "))
 operator = input("Please Enter Valid Operator From -> + , - , / , * : ")
@@ -251,51 +252,147 @@ match operator:
             print("Cannot divide by zero!")
     case "*": print(f"{num1} * {num2} = {num1 * num2}")
     case _: print("Invalid Operator")
-
+'''
 
 # ============================================================
 #  SECTION 4: WHILE LOOP
 # ============================================================
+#Practise
+'''
+#Increament
+counter = 1
+
+while counter <= 5:
+    print("Hi")
+    counter = counter
+    + 1
+'''
+#Decreament
+'''
+counter = 5
+
+while counter >= 1:
+    print(counter)
+    counter = counter - 1
+'''
 
 # Q13. Print numbers from 1 to 20 using a while loop.
+'''
+number = 1
 
-
+while number <=20:
+    print(number)
+    number = number + 1
+'''
 # Q14. Print all EVEN numbers from 2 to 50 using while.
+'''
+number = 2
 
-
+while number <=50:
+    print(number)
+    number = number + 2
+'''
+            
 # Q15. Take a number as input. Count how many digits it has.
 #      (Use while loop with //= 10, NOT len(str(n)))
-
+'''
+inputNumber = int(input("Please Enter A Valid Number : "))
+print("Your Original Number Is : ", inputNumber)
+count = 0
+while inputNumber > 0:
+    inputNumber = inputNumber // 10
+    count = count + 1
+    
+print("There Are ", count , " Digits In Your Number")
+'''
 
 # Q16. Take a number as input. Print the REVERSE of the number.
 #      Example: 12345 → 54321
 #      (Use while loop with % and //, NOT string slicing)
 
+# reversed = 0
+# inputNumber = int(input("Please Enter A Valid Value : "))
+
+# while inputNumber > 0:
+#     digit = inputNumber % 10
+#     reversed = reversed * 10 + digit
+#     inputNumber = inputNumber // 10
+
+# print(reversed)
 
 # Q17. Take a number as input. Find the SUM of its digits.
 #      Example: 9876 → 9+8+7+6 = 30
 
+# sum = 0
+# inputNumber = int(input("Please Enter a valid number : "))
+# while inputNumber > 0:
+#     digit = inputNumber % 10
+#     sum = sum + digit
+#     inputNumber = inputNumber // 10
+
+# print(sum)
 
 # Q18. Take a number as input. Check if it's a PALINDROME.
 #      Example: 121 → Palindrome, 123 → Not Palindrome
 #      (Reverse it using while loop, then compare)
 
 
+# reversed = 0
+# inputNumber = int(input("Please Enter A Valid Value : "))
+# originalNumber = inputNumber
+
+# while inputNumber > 0:
+#     digit = inputNumber % 10
+#     reversed = reversed * 10 + digit
+#     inputNumber = inputNumber // 10
+
+# if(reversed == originalNumber):
+#     print("PALINDROME")
+# else:
+#     print("No Palindrome")
+
 # ============================================================
 #  SECTION 5: FOR LOOP & range()
 # ============================================================
 
+# Practise
+
+# stringWord = "HELLOW"
+
+# for varo in stringWord:
+#     print(varo)
+# string = "Hellow"
+# if 'o' in string:
+#     print("Yess")
 # Q19. Print numbers from 1 to 10 using for loop and range().
 
+# for i in range(1,11):
+#     print(i)
 
-# Q20. Print all numbers from 50 to 1 (countdown) using range().
+# for i in range(10):
+#     print(i+1)
 
+# # Q20. Print all numbers from 50 to 1 (countdown) using range().
 
-# Q21. Print all multiples of 7 between 1 and 100.
+# for j in range(51,1,-1):
+#     print(j-1)
 
+# # # Q21. Print all multiples of 7 between 1 and 100.
 
-# Q22. Take a string as input. Count the number of vowels in it.
+# # for k in range(1,101):
+# #     if(k % 7 == 0):
+# #         print(k)
 
+# # Q22. Take a string as input. Count the number of vowels in it.
+
+# string = input("Enter a string : ")
+# count = 0
+
+# for char in string:
+#     if(char in "AEIOUaeiou"):
+#         count = count + 1
+
+# print(count)
 
 # Q23. Print this pattern using nested for loops:
 #      *
@@ -304,6 +401,11 @@ match operator:
 #      * * * *
 #      * * * * *
 
+# for i in range(1,6):
+#     for j in range(1, i + 1):
+#         print("*",end = " ")
+#     print()
+    
 
 # Q24. Print this pattern:
 #      * * * * *
@@ -311,11 +413,18 @@ match operator:
 #      * * *
 #      * *
 #      *
-
+# for i in range(7,1,-1):
+#     for j in range(1, i - 1):
+#         print("*",end = " ")
+#     print()
 
 # Q25. Print multiplication table of a number from 1 to 10.
 #      Format: 5 x 1 = 5, 5 x 2 = 10, etc.
 
+# n = 5
+
+# for digit in range(1,11):
+#     print(n, " x ", digit ," = ", digit * n)
 
 # ============================================================
 #  SECTION 6: BREAK & CONTINUE
