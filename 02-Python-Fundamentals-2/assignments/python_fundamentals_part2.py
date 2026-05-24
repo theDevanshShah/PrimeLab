@@ -453,15 +453,15 @@ print("There Are ", count , " Digits In Your Number")
 # Q28. Take numbers as input in a loop. Stop when user enters 0.
 #      Print the sum of all numbers entered.
 #      (Use while True with break)
-sum = 0
+# sum = 0
 
-while True:
-    num = int(input("Please Enter Valid Number : "))
-    if num == 0:
-        break
-    sum = sum + num
+# while True:
+#     num = int(input("Please Enter Valid Number : "))
+#     if num == 0:
+#         break
+#     sum = sum + num
 
-print(sum)
+# print(sum)
     
     
 
@@ -480,34 +480,101 @@ print(sum)
 # Q30. Write a function greet(name) that prints "Hello, [name]!".
 #      Call it 3 times with different names.
 
+# name = input("Please enter your name : ")
+# def greet(name):
+#     print("Hello, " + name + "!")
+    
+# greet(name)
 
 # Q31. Write a function add(a, b) that RETURNS the sum.
 #      Print the result of add(10, 20).
 
+# def add(a,b):
+#     c = a + b
+#     print(c)
+
+# add(10,20)
 
 # Q32. Write a function is_even(n) that returns True if even, False if odd.
 #      Test it with 4 and 7.
+
+# def is_even(n):
+#     if(n % 2 == 0):
+#         return True
+#     else:
+#         return False
+    
+# print(is_even(4))
+# print(is_even(7))
 
 
 # Q33. Write a function max_of_three(a, b, c) that returns the largest.
 #      Don't use the built-in max() function.
 
+# def max_of_three(a,b,c):
+#     if a > b and a > c:
+#         return a
+#     elif b > c and b > a:
+#         return b
+#     else:
+#         return c
+    
+# print(max_of_three(1,2,3))
+# print(max_of_three(2,1,3))
+# print(max_of_three(3,2,1))
+# print(max_of_three(3,1,2))
 
 # Q34. Write a function power(base, exp=2) with DEFAULT parameter.
 #      power(5) should return 25, power(5, 3) should return 125.
 
+# def power(base, exp = 2):
+#     return base ** exp
+
+# print(power(5))
+# print(power(5,3))
 
 # Q35. Write a function that takes a number and returns TWO values:
 #      the square and the cube. Use tuple unpacking to print both.
+# def powers(n):
+#       square = n ** 2
+#       cube = n ** 3
+#       return square, cube
 
+# a, b = powers(5)
+# print(a, b)
 
 # Q36. Write a function is_prime(n) that returns True if prime.
 #      Test with: 2, 7, 10, 13, 1, 0
 
+# def is_prime(n):
+#     if(n < 2):
+#         return False
+    
+#     for i in range(2, n):
+#         if n % i == 0:
+#             return False
+    
+#     return True
+
+# print(is_prime(2))
+# print(is_prime(7))
+# print(is_prime(10))
+# print(is_prime(13))
+# print(is_prime(1))
+# print(is_prime(0))
 
 # Q37. Write a function count_vowels(text) that returns the
 #      number of vowels in a string. Test with "Devansh Shah".
 
+# def count_vowels(text):
+#     count = 0
+#     length = len(text)
+#     for i in range(length):
+#         if text[i] in ("AEIOUaeiou"):
+#             count = count + 1
+#     return count
+
+# print(count_vowels("Devansh Shah"))
 
 # ============================================================
 #  SECTION 8: LAMBDA FUNCTIONS
