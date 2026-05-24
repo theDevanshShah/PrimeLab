@@ -219,12 +219,38 @@ else:
 #      1 → Monday, 2 → Tuesday ... 7 → Sunday
 #      Anything else → "Invalid day"
 #      (Use match-case, NOT if-elif)
+'''
+dayNumber = int(input("Please Enter A Valid Number Between 1-7 : "))
 
-
+match dayNumber:
+    case 1 : print("Monday")
+    case 2 : print("Tuesday")
+    case 3 : print("Wednesday")
+    case 4 : print("Thursday")
+    case 5 : print("Friday")
+    case 6 : print("Saturday")
+    case 7 : print("Sunday")
+    case _ : print("Invalid Day") 
+'''
+    
 # Q12. Simple Calculator using match-case:
 #      Take num1, operator (+,-,*,/), and num2 as input.
 #      Match the operator and print the result.
 #      Handle division by zero!
+num1 = int(input("Please Enter Valid Number 1 : "))
+num2 = int(input("Please Enter Valid Number 2 : "))
+operator = input("Please Enter Valid Operator From -> + , - , / , * : ")
+
+match operator:
+    case "+": print(f"{num1} + {num2} = {num1 + num2}")
+    case "-": print(f"{num1} - {num2} = {num1 - num2}")
+    case "/":
+        if num2 != 0:
+            print(f"{num1} / {num2} = {num1 / num2}")
+        else:
+            print("Cannot divide by zero!")
+    case "*": print(f"{num1} * {num2} = {num1 * num2}")
+    case _: print("Invalid Operator")
 
 
 # ============================================================
