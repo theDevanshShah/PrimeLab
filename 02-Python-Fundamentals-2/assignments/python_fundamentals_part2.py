@@ -433,19 +433,45 @@ print("There Are ", count , " Digits In Your Number")
 # Q26. Print numbers from 1 to 20, but STOP when you hit 13.
 #      (Use break)
 
+# x = 0
+
+# for x in range(1,21):
+#     print(x)
+#     if(x == 13):
+#         break
 
 # Q27. Print numbers from 1 to 20, but SKIP multiples of 3.
 #      (Use continue)
 
+# x = 0
+
+# for x in range(1,21):
+#     if(x % 3 == 0):
+#         continue
+#     print(x)
 
 # Q28. Take numbers as input in a loop. Stop when user enters 0.
 #      Print the sum of all numbers entered.
 #      (Use while True with break)
+sum = 0
 
+while True:
+    num = int(input("Please Enter Valid Number : "))
+    if num == 0:
+        break
+    sum = sum + num
+
+print(sum)
+    
+    
 
 # Q29. Find the FIRST number between 100 and 200 that is
 #      divisible by both 3 and 7. Print it and stop.
 
+# for x in range(100,201):
+#     if x % 3 == 0 and x % 7 == 0:
+#         print(x)
+#         break
 
 # ============================================================
 #  SECTION 7: FUNCTIONS
