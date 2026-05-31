@@ -580,25 +580,33 @@ print("There Are ", count , " Digits In Your Number")
 #  SECTION 8: LAMBDA FUNCTIONS
 # ============================================================
 
+# # Practise 
+# sum = lambda a,b,c: a+b+b
+
+# print(sum(5,6,7))
+
 # Q38. Write a lambda function that doubles a number.
 #      Test: double(5) → 10
 
+# double = lambda n : n + n
+
+# print(double(5))
 
 # Q39. Write a lambda function that checks if a number is positive.
 #      Test: is_positive(5) → True, is_positive(-3) → False
 
+# is_positive = lambda n : n > 0
 
-# Q40. Given this list: [3, 1, 4, 1, 5, 9, 2, 6]
-#      Use filter() with lambda to get only numbers > 4.
+# print(is_positive(5))
+# print(is_positive(-3))
 
+# # Q40. Given this list: [3, 1, 4, 1, 5, 9, 2, 6]
+# #      Use filter() with lambda to get only numbers > 4.
 
-# Q41. Given this list: [1, 2, 3, 4, 5]
-#      Use map() with lambda to get the cube of each number.
+# numbers = [3, 1, 4, 1, 5, 9, 2, 6]
+# result = filter(lambda x : x > 4,numbers)
 
-
-# Q42. Given: students = [("Dev", 85), ("Alice", 92), ("Bob", 78)]
-#      Sort by marks (second element) using sort() with lambda.
-
+# print(list(result))
 
 # ============================================================
 #  SECTION 9: RECURSION & FACTORIAL
@@ -607,10 +615,18 @@ print("There Are ", count , " Digits In Your Number")
 # Q43. Write a function factorial(n) using a FOR LOOP.
 #      Test: factorial(5) → 120, factorial(0) → 1
 
+# def factorial(n):
+#     result = 1
+#     for i in range(1,n + 1):
+#         result = result * i
+#     return result
+
+# print(factorial(5))
+# print(factorial(10))
+# print(factorial(0))
 
 # Q44. Write a function factorial_recursive(n) using RECURSION.
 #      Test with same values.
-
 
 # Q45. Write a recursive function sum_n(n) that returns
 #      the sum of first n natural numbers.
