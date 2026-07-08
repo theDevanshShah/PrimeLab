@@ -625,18 +625,6 @@ print("There Are ", count , " Digits In Your Number")
 # print(factorial(10))
 # print(factorial(0))
 
-# Q44. Write a function factorial_recursive(n) using RECURSION.
-#      Test with same values.
-
-# Q45. Write a recursive function sum_n(n) that returns
-#      the sum of first n natural numbers.
-#      sum_n(5) → 15 (1+2+3+4+5)
-
-
-# Q46. Write a recursive function countdown(n) that prints
-#      n, n-1, n-2, ..., 1, "Go!"
-
-
 # ============================================================
 #  SECTION 10: MIXED PRACTICE (COMBINE EVERYTHING!)
 # ============================================================
