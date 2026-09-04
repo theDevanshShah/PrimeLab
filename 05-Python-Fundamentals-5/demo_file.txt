@@ -1,0 +1,2 @@
+This is written using w+ mode.
+This text is added using a+ mode.
