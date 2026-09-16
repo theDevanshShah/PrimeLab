@@ -1,0 +1,94 @@
+[
+  {
+    "title": "Inception",
+    "director": "Christopher Nolan",
+    "year": 2010,
+    "genre": "Sci-Fi",
+    "rating": 8.8,
+    "duration_minutes": 148
+  },
+  {
+    "title": "Interstellar",
+    "director": "Christopher Nolan",
+    "year": 2014,
+    "genre": "Sci-Fi",
+    "rating": "seven",
+    "duration_minutes": 169
+  },
+  {
+    "title": "Parasite",
+    "director": "Bong Joon-ho",
+    "year": 2019,
+    "genre": "Thriller",
+    "rating": "9",
+    "duration_minutes": 132
+  },
+  {
+    "title": "Whiplash",
+    "director": "Damien Chazelle",
+    "year": 2014,
+    "genre": "Drama",
+    "rating": " 8.5 ",
+    "duration_minutes": 106
+  },
+  {
+    "title": "The Dark Knight",
+    "director": "Christopher Nolan",
+    "year": 2008,
+    "genre": "Action",
+    "rating": " 9     ",
+    "duration_minutes": 152
+  },
+  {
+    "title": "La La Land",
+    "director": "Damien Chazelle",
+    "year": 2016,
+    "genre": "Musical",
+    "rating": 8.0,
+    "duration_minutes": 128
+  },
+  {
+    "title": "Dangal",
+    "director": "Nitesh Tiwari",
+    "year": 2016,
+    "genre": "Sports",
+    "rating": 8.3,
+    "duration_minutes": 161
+  },
+  {
+    "title": "3 Idiots",
+    "director": "Rajkumar Hirani",
+    "year": 2009,
+    "genre": "Comedy",
+    "rating": "2"
+  },
+  {
+    "title": "Andhadhun",
+    "director": "Sriram Raghavan",
+    "year": 2018,
+    "genre": "Thriller",
+    "rating": 8.2,
+    "duration_minutes": 139
+  },
+  {
+    "title": "The Martian",
+    "director": "Ridley Scott",
+    "year": 2015,
+    "genre": "Sci-Fi",
+    "rating": 8.0,
+    "duration_minutes": 144
+  },
+    {
+    "title": "Interstellar",
+    "director": "Christopher Nolan",
+    "year": 2014,
+    "genre": "Sci-Fi",
+    "rating": 8.7
+  },{
+    "title": "Whiplash",
+    "director": "Damien Chazelle",
+    "genre": "Drama",
+    "rating": 8.5,
+    "duration_minutes": 106
+  }
+]
